@@ -1,9 +1,10 @@
 print("---ANALYSE TEXTE---")
-text = str(input("Enter the texte: "))
+text = str(input("Enter the texte: ").lower)
 voyelle = "aeiouy"
 count_voy = 0
 count_word = 0
 count_cons = 0
+
 for i in range(len(text)):
     for j in range(len(voyelle)):
         if text[i] == voyelle[i]:
